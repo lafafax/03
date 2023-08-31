@@ -76,15 +76,92 @@
         </li>
         <li>
             <ul><em> Selector universal</em>
-                <li>Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.</li>
+                <li>Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.
+                </li>
             </ul>
         </li>
         <li>
             <ul><em>Selector de etiquetas</em>
-                <li></li>
+                <li>Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar "<>"</li>
+            </ul>
+        </li>
+        <li>
+            <ul><em>Selector descendente</em>
+                <li>Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores
+                    siempre están formados por dos o más selectores <br> separados entre si. El último selector será el
+                    elemento HTML al que se le aplicará las propiedades de CSS.</li>
             </ul>
         </li>
     </ul>
+    <h3><strong>1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</strong></h3>
+    <ol>
+        <li>El navegador carga el HTML</li>
+        <li>Convierte el HTML en un DOM </li>
+        <li>el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las imágenes y
+            los videos incrustados y también el CSS vinculado</li>
+        <li>El navegador analiza el CSS y ordena en diferentes "cubos" las diferentes reglas según el tipo de
+            selector (arbol de renderizacion).</li>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas.</li>
+        <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+    </ol>
+    <h3><strong>1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?</strong></h3>
+    <p>Para vincular el CSS con HTML se pueden usar 3 formas</p>
+    <dl>
+        <dt><sup>utilizando la etiqueta style</sup></dt>
+        <dd>En nuestro HTML y dentro de la etiqueta head utilizaremos la etiqueta style es decir que los CSS se aplican
+            al MISMO docuemnto HTML.</dd>
+        <dt><sub>utilizando el atributo style</sub></dt>
+        <dd>En nuestro HTML aplicaremos estilos directamente a la etiqueta. Recordemos que los atributos con
+            características de un etiqueta.</dd>
+        <dt><sup>utilizando un archivo externo</sup></dt>
+        <dd>Esta opción es la que nos permite vincular un archivo HTML con un archivo CSS. Los archivos CSS tienen
+            extensión .css. Suelen llamarse estilos.css, style.css <br> o también podés darle el nombre que prefieras
+            para tu
+            proyecto.</dd>
+    </dl>
+    <h3><strong>Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿son iguales?
+            ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?</strong></h3>
+    <a href="http://www.csszengarden.com/101/">1er diseño</a>
+    <a href="http://www.csszengarden.com/208/">2do Diseño</a>
+    <p>La estructura HTML es la misma, en caunto a etiquetas y demas, lo unico que cambia, todo el diseño visual cambia
+        debido al CSS, el CSS cambia, el HTML no</p>
+    <h3><strong>2.0- Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada
+            propiedad.</strong></h3>
+    <dl>
+        <dt>color</dt>
+        <dd>Valores named-color</dd>
+        <dd> Valores hex-color </dd>
+        <dd>Valores rgb() </dd>
+        <dt>background-color</dt>
+        <dd>color Se puede especificar el color de fondo como un valor RGB hexa-decimal o regular, o utilizando una de
+            las palabras claves predefinidas de color.</dd>
+        <dd>transparent El valor por defecto del color de fondo (background-color) es transparent tomando así el color
+            del elemento que está justo debajo de él en el apilamiento.</dd>
+        <dt>font-size</dt>
+        <dd>xx-small, x-small, small, medium, large, x-large, xx-large</dd>
+        <dd>larger, smaller</dd>
+        <dd>longitud</dd>
+        <dd>porcentaje</dd>
+        <dt>font-weight</dt>
+        <dd>normal, bold, lighter, bolder</dd>
+        <dd>100, 200, 300, 400, 500, 600, 700, 800, 900</dd>
+        <dt>font-style</dt>
+        <dd>normal, italic, oblique</dd>
+        <dt>font-family</dt>
+        <dd>nombre de familia o genérico</dd>
+        <dt>text-align</dt>
+        <dd>start, end, left, right, center, justify, justify-all, etc</dd>
+        <dt>text-decoration</dt>
+        <dd>text-decoration-line, text-decoration-color, y text-decoration-style</dd>
+        <dt>text-transform</dt>
+        <dd>uppercase, lowercase, none, full-width</dd>
+        <dt>letter-spacing</dt>
+        <dd>normal, length</dd>
+        <dt>line-height</dt>
+        <dd>normal, number, length, percentage</dd>
+    </dl>
+
 </body>
 
 </html>
